@@ -118,11 +118,21 @@ You can see that ardupilot-sitl created some outputs such as "127.0.0.1:14550" "
 
 ## Connect Rover to MAVROS
 
+At first you have to source ROS and MAVROS. If you have installed them from binary files, follow these commands:
+
+* `source /opt/ros/melodic/setup.bash` - Defines the installed folder of ROS and MAVROS
+
+Or if you have installed them from source, follow these commands:
+
 * `source <ROS_INSTALL_PATH>/devel/setup.bash` - Defines the installed folder of ROS (You can insert this command at the bottom of ~/.bashrc file to automatically run this command while opening a new shell. For this, you can use this command: `sudo nano ~/.bashrc`)
 
 * `source <MAVROS_INSTALL_PATH>/devel/setup.bash` - Defines the installed folder of MAVROS (You can insert this command at the bottom of ~/.bashrc file to automatically run this command while opening a new shell. For this, you can use this command: `sudo nano ~/.bashrc`)
 
+Then it is the time for bringing up the core of ros:
+
 * `roscore` - Brings up ros core for accessing its functions and built packages
+
+Afterwards, you have to tell the MAVROS how to find the vehicle you are using it:
 
 * `roslaunch mavros apm.launch fcu_url:=udp://:14550@` - Connects vehicle from UDP:14550 port to MAVROS
 
