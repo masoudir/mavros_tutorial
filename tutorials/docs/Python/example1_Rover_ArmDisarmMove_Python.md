@@ -5,7 +5,7 @@
 *Github Page:* [github.com/masoud-iranmehr/Ardupilot_MAVROS_Examples](https://github.com/masoud-iranmehr/Ardupilot_MAVROS_Examples)
 
 ## Initialize
-You just need to follow these steps (has been mentioned in [Quick Start](index.md))
+You just need to follow these steps (has been mentioned in [Quick Start](../index.md))
 
 ### Bringing up Ardupilot-SITL for Rover
 

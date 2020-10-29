@@ -32,9 +32,9 @@ ready-built binary files or installing from source. I prefer to install the full
 using ubuntu, it's likely to face some problems in installing ROS from binary files mentioned in ROS tutorials from 
 source, because its procedure is common for any kinds of linux platforms.
 
-For install ROS-melodic from source you can refer to this [link](http://wiki.ros.org/melodic/Installation/Source)
+For install ROS-melodic from source you can refer to this [link](http://wiki.ros.org/melodic/Installation/Source).
 
-For install ROS-melodic from binary files you can refer to this [link](http://wiki.ros.org/melodic/Installation/Ubuntu)
+For install ROS-melodic from binary files you can refer to this [link](http://wiki.ros.org/melodic/Installation/Ubuntu).
 
 ## Install MAVROS
 
@@ -42,7 +42,7 @@ If you want to have installed ROS from binary files, this is recommended to inst
 
 ### Install MAVROS from binary files
 
-For this, you can refer to this [link](https://ardupilot.org/dev/docs/ros-install.html)
+For this, you can refer to this [link](https://ardupilot.org/dev/docs/ros-install.html).
 
 For case of ease, the commands to be executed for installing MAVROS from binary files are as below:
 
@@ -91,7 +91,7 @@ for full documentation. But here is the abstract commands:
 
 * `source devel/setup.bash` - Uses setup.bash or setup.zsh from workspace so that rosrun can find nodes from this workspace
 
-For installing MAVROS from binary packages please refer to [https://ardupilot.org/dev/docs/ros-install.html#installing-mavros](https://ardupilot.org/dev/docs/ros-install.html#installing-mavros)
+For installing MAVROS from binary packages please refer to [https://ardupilot.org/dev/docs/ros-install.html#installing-mavros](https://ardupilot.org/dev/docs/ros-install.html#installing-mavros).
 
 # Ignite Rover robot
 
@@ -143,19 +143,18 @@ Or if you want to connect to your robot via TCP port remotely, you can use this 
 
 ## View ROS topics
 
-* `source <ROS_INSTALL_PATH>/devel/setup.bash` - Defines the installed folder of ROS (You can insert this command at the bottom of ~/.bashrc file to automatically run this command while opening a new shell. For this, you can use this command: `sudo nano ~/.bashrc`)
+* `source <ROS_INSTALL_PATH>/devel/setup.bash` - Defines the installed folder of ROS (You can insert this command at the 
+bottom of ~/.bashrc file to automatically run this command while opening a new shell. For this, you can use this command: `sudo nano ~/.bashrc`)
 
 * `rqt` - Executes ROS plugin monitoring window
 
-Alternatively you can execute ROS command to view available topics:
+Then in rqt window shown, you have to select from "Plugins" > "Topics" > "Topic Monitor" to stat topic monitoring. This 
+will show you the bottom figure:
 
-* `` - Executes ROS plugin monitoring window
+![Screenshot](tutorials/docs/img/fig1_ros_topic_monitoring.jpg)
 
-In rqt window shown, you have to select from "Plugins" > "Topics" > "Topic Monitor" to stat topic monitoring. This will show you the bottom figure:
-
-![Screenshot](img/fig1_ros_topic_monitoring.jpg)
-
-You can tick any of the topic shown and monitor its contents. But in my own experience, I think that it's better to use commands in terminal or write them down in your scripts (bash, C++, python and ...)
+You can tick any of the topic shown and monitor its contents. But in my own experience, I think that it's better to use 
+commands in terminal or write them down in your scripts (bash, C++, python and ...)
  
 
 
