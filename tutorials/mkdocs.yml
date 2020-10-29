@@ -1,0 +1,9 @@
+site_name: Ardupilot MAVROS Examples
+nav:
+    - Quick Start: index.md
+    - Example1-Rover-Arm and Disarm (CLI): example1_Rover_ArmDisarm_CLI.md
+    - Example1-Rover-Arm and Disarm (Python): example1_Rover_ArmDisarm_Python.md
+    - Example1-Rover-Arm and Disarm (Cpp): example1_Rover_ArmDisarm_Cpp.md
+    - Example2-Rover-Change Mode: example2_Rover_ChangeMode.md
+    - About: about.md
+theme: readthedocs
