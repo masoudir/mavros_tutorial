@@ -2,7 +2,7 @@
 
 *Author:* Masoud Iranmehr
 
-*Github Page:* [github.com/masoud-iranmehr/Ardupilot_MAVROS_Examples](https://github.com/masoud-iranmehr/Ardupilot_MAVROS_Examples)
+*Github Page:* [https://github.com/masoud-iranmehr/mavros_ardurover_examples](https://github.com/masoud-iranmehr/mavros_ardurover_examples)
 
 
 # Introduction
@@ -25,10 +25,37 @@ I prefer to use external proxy if I needed for MAVlink protocol. MAVProxy can fo
 * `pip3 install MAVProxy` - Install MAVProxy
 
 ## Install ROS
-ROS is semi-Operating System for robots. ROS is generally available for many programming languages such as C++, Python, Javascript and etc. It's free and easy to use. Until now there are three supported versions of ROS (kinetic, melodic and neotic) and I prefer to use melodic in this document. To install ROS-melodic I prefer to install the full-version of ros-melodic from source, because its procedure is common for any kinds of linux platforms. For install it from source you can refer to [http://wiki.ros.org/melodic/Installation/Source](http://wiki.ros.org/melodic/Installation/Source)
+ROS is semi-Operating System for robots. ROS is generally available for many programming languages such as C++, Python, 
+Javascript and etc. It's free and easy to use. Until now there are three supported versions of ROS (kinetic, melodic and
+neotic) and I prefer to use melodic in this document. To install ROS-melodic, there are two ways of installing from 
+ready-built binary files or installing from source. I prefer to install the full-version of ros-melodic. If you are not 
+using ubuntu, it's likely to face some problems in installing ROS from binary files mentioned in ROS tutorials from 
+source, because its procedure is common for any kinds of linux platforms.
+
+For install ROS-melodic from source you can refer to this [link](http://wiki.ros.org/melodic/Installation/Source)
+
+For install ROS-melodic from binary files you can refer to this [link](http://wiki.ros.org/melodic/Installation/Ubuntu)
 
 ## Install MAVROS
-I prefer to install MAVROS from source due to the similarity between various Linux distributions. You can refer to [https://github.com/mavlink/mavros/tree/master/mavros#installation](https://github.com/mavlink/mavros/tree/master/mavros#installation) for full documentation. But here is the abstract commands:
+
+If you want to have installed ROS from binary files, this is recommended to install MAVROS from binary files too. 
+
+### Install MAVROS from binary files
+
+For this, you can refer to this [link](https://ardupilot.org/dev/docs/ros-install.html)
+
+For case of ease, the commands to be executed for installing MAVROS from binary files are as below:
+
+    sudo apt-get install ros-melodic-mavros ros-melodic-mavros-extras
+    wget https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/install_geographiclib_datasets.sh
+    chmod a+x install_geographiclib_datasets.sh
+    ./install_geographiclib_datasets.sh
+ 
+### Install MAVROS from source
+
+If you are not using ubuntu, this is strongly recommended to install MAVROS from source due to the similarity between 
+various Linux distributions. You can refer to this [link](https://github.com/mavlink/mavros/tree/master/mavros#installation) 
+for full documentation. But here is the abstract commands:
 
 * `source <ROS_INSTALL_PATH>/devel/setup.bash` - Defines the installed folder of ROS (You can insert this command at the bottom of ~/.bashrc file to automatically run this command while opening a new shell. For this, you can use this command: `sudo nano ~/.bashrc`) 
   
