@@ -1,4 +1,4 @@
-# How to Arm and Disarm Ardupilot-SITL Rover in MAVROS 
+# How to Get/ Set parameters of Ardupilot-SITL Rover in MAVROS 
 
 *Author:* Masoud Iranmehr
 

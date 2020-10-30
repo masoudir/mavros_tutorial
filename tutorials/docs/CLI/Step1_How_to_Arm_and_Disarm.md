@@ -18,6 +18,21 @@ You can send your commands directly from your terminal provided by MAVProxy or S
 
 * `disarm` - Disarms the robot
 
+## Arm and Disarm using ROS rqt
+
+At first you need to Add two plugin from rqt:
+
+    Plugins -> Topics -> Topic Monitor
+    Plugins -> Services -> Service Caller
+    
+Then in "Topic Monitor" side, you have to tick the topic of "/mavros/state" to view its contents, so that you can get 
+the vehicle mode and also some other parameters such as "arm status" and "Guided status".
+
+Then in "Service Caller" side, you have to select "/mavros/cmd/arming" and then in the field of "value", you can set
+your arm status as a bool type variable (False/ True).  Then click on "call" button to send this message. The result should be as follow:
+
+![Screenshot](../img/fig2_rqt_arm.jpg)
+
 ## Arm and Disarm using ROS commands lines
 
 ### Monitoring Rover general status (Arm status and Mode name)
