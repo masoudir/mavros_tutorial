@@ -158,7 +158,7 @@ define(['module'], function (module) {
             //if strip is present, then that means only get the string contents
             //inside a body tag in an HTML string. For XML/SVG content it means
             //removing the <?xml ...?> declarations so the content can be inserted
-            //into the current doc without problems.
+            //into the current docs without problems.
 
             // Do not bother with the work if a build and text will
             // not be inlined.
