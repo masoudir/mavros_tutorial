@@ -4,7 +4,7 @@
 
 *Github Page:* [https://github.com/masoud-iranmehr/mavros_tutorial](https://github.com/masoud-iranmehr/mavros_tutorial)
 
-*Web Page:*
+*Web Page: []()
 
 # Introduction
 This project illustrates some examples about simulating robots via Ardupilot-SITL using python and C++ languages and 
@@ -157,7 +157,7 @@ will show you the bottom figure:
 You can tick any of the topic shown and monitor its contents. But in my own experience, I think that it's better to use 
 commands in terminal or write them down in your scripts (bash, C++, python and ...)
 
-For further information refer to this page [link](tutorials/CLI/Step1_How_to_Arm_and_Disarm.md).
+For further information refer to this page [link](tutorials/docs/CLI/Step1_How_to_Arm_and_Disarm.md).
  
 
 
