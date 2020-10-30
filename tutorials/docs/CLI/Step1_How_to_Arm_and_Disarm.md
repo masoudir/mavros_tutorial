@@ -4,9 +4,11 @@
 
 *Github Page:* [github.com/masoud-iranmehr/Ardupilot_MAVROS_Examples](https://github.com/masoud-iranmehr/Ardupilot_MAVROS_Examples)
 
-## Initialize
+# Initialize
 
 Please follow steps mentioned in this [link](../index.md)
+
+## Arm and Disarm
 
 ## Arm and Disarm using MAVProxy or Ardupilot-SITL
 
@@ -45,7 +47,9 @@ The results should be as similar as this:
     system_status: 4                                                                                                                                                       
     --- 
 
-The command "rostopic echo <TOPIC_NAME>" will return all the contents of the topic every one second. In this case, "connected" field shows you that your MAVROS is still connected to the robot. Also "mode" shows you the name of vehicle mode at that time.
+The command "rostopic echo <TOPIC_NAME>" will return all the contents of the topic every one second. In this case, 
+"connected" field shows you that your MAVROS is still connected to the robot. Also "mode" shows you the name of vehicle 
+mode at that time.
 
 ### Send Arm/Disarm command to robot
 
