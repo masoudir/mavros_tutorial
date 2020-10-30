@@ -1,10 +1,4 @@
-site_name: ArduRover MAVROS Examples
+site_name: MAVROS Tutorial
 nav:
-#    - Quick Start: index.md
-#    - How to Arm and Disarm: CLI/Step1_How_to_Arm_and_Disarm.md
-#    - Example1-Rover-Arm and Disarm (Python): example1_Rover_ArmDisarm_Python.md
-#    - Example1-Rover-Arm and Disarm (Pythondddd): python/example1_Rover_ArmDisarm_Python.md
-#    - Example1-Rover-Arm and Disarm (Cpp): example1_Rover_ArmDisarm_Cpp.md
-#    - Example2-Rover-Change Mode: example2_Rover_ChangeMode.md
 #    - About: about.md
 theme: readthedocs
