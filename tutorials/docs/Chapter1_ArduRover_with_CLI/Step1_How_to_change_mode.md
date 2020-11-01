@@ -1,4 +1,4 @@
-# How to change mode of Ardupilot-SITL Rover in MAVROS 
+# How to change mode of Ardupilot-SITL Rover
 
 *Author:* Masoud Iranmehr
 
@@ -39,7 +39,7 @@ the vehicle mode and also some other parameters such as "arm status" and "Guided
 Then in "Service Caller" side, you have to select "/mavros/set_mode" and then in the field of "custom_mode", you can set
 your vehicle mode. Then click on "call" button to send this message. The result should be as follow:
 
-![Screenshot](../img/fig3_rqt_setmode.jpg)
+![Screenshot](../img/ch1_rqt_setmode.jpg)
 
 ## Change vehicle mode using ROS command lines
 

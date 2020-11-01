@@ -1,4 +1,4 @@
-# How to move Ardupilot-SITL Rover in MAVROS 
+# How to move Ardupilot-SITL Rover
 
 *Author:* Masoud Iranmehr
 
@@ -6,44 +6,30 @@
 
 # Initialize
 
-Please follow steps mentioned in this [link](../index.md)
+Please follow steps mentioned in this [link](../index.md). Then you need to change the mode of your vehicle to "GUIDED"
+using this [link](Step1_How_to_change_mode.md) then you have to ARM your robot using one of the mentioned methods on this
+[link]. Then it is time to move your vehicle which is described here. 
 
-Then follow the steps in this [link](Step1_How_to_Arm_and_Disarm.md) to Arm your vehicle.
+# Move your vehicle
 
+## Move your vehicle using MAVProxy or Ardupilot-SITL
 
-# Execute GOTO in vehicle
+We assume that your vehicle is in "GUIDED" mode, if it's not please follow the links mentioned in "Initialize" sector on
+this page. Then move your vehicle using this command in MAVproxy or SITL:
 
-## Execute GOTO with MAVProxy commands:
+* `GUIDED lat lon alt` - Move vehicle to specified destination
 
-### How to make vehicle move
+Parameters of (lat, lon, alt) are the location parameters to determive the destination of the vehicle.
 
-You can use this command for forcing vehicle to move:
+Then if you want to stop vehicle from moving, you need this command:
 
-* `GUIDED LAT LON ALTITUDE` - Changes the mode to GUIDED and force vehicle to move to the point of (LAT, LON, ALT)
-
-### How to stop vehicle
-
-You can use this command for forcing vehicle to move:
-
-* `hold` - Stops vehicle from moving
-
-Or
-
-* `mode hold` - Stops vehicle from moving
-
-For reverse, you have to change mode to *"GUIDED"*:
-
-* `mode guided` - Stops vehicle from moving
+* `mode HOLD` - Stops the vehicle
 
 
+## Move your vehicle using ROS rqt:
 
-
-////
-
-
-## Change vehicle mode using ROS rqt:
-
-At first you need to Add two plugin from rqt:
+We assume that your vehicle is in "GUIDED" mode, if it's not please follow the links mentioned in "Initialize" sector on
+this page. Then you need to Add two plugin from rqt:
 
     Plugins -> Topics -> Topic Monitor
     Plugins -> Services -> Service Caller
@@ -54,36 +40,9 @@ the vehicle mode and also some other parameters such as "arm status" and "Guided
 Then in "Service Caller" side, you have to select "/mavros/set_mode" and then in the field of "custom_mode", you can set
 your vehicle mode. Then click on "call" button to send this message. The result should be as follow:
 
-![Screenshot](../img/fig3_rqt_setmode.jpg)
+![Screenshot](../img/ch1_rqt_setmode.jpg)
 
 ## Change vehicle mode using ROS command lines
-
-### Get mode
-
-If you want to see the last mode of the vehicle, you can just type this command:
-
-* `rostopic echo /mavros/state` - Returns all contents of /mavros/state topic periodically
-
-The results should be as similar as this:
-
-    ---                                                                                                                                                                    
-    header:                                                                                                                                                                
-      stamp: 09                                                                                                                                                            
-        secs: 1595198641                                                                                                                                                   
-                                                                                                                                                                           
-        nsecs: 651358095                                                                                                                                                   
-      frame_id: ''                                                                                                                                                         
-    connected: True                                                                                                                                                        
-    guided: False                                                                                                                                                          
-    manual_input: True                                                                                                                                                     
-                                                                                                                                                                           
-    mode: "MANUAL"                                                                                                                                                         
-    system_status: 4                                                                                                                                                       
-    --- 
-    
-You can find the mode in the field of "mode" of the result shown.
-
-### Set mode
 
 You need to call a ros service in order to do that. Just follow these commands:
 

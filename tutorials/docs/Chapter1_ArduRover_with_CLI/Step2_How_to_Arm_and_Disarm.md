@@ -1,4 +1,4 @@
-# How to Arm and Disarm Ardupilot-SITL Rover in MAVROS 
+# How to Arm and Disarm Ardupilot-SITL Rover
 
 *Author:* Masoud Iranmehr
 
@@ -31,7 +31,7 @@ the vehicle mode and also some other parameters such as "arm status" and "Guided
 Then in "Service Caller" side, you have to select "/mavros/cmd/arming" and then in the field of "value", you can set
 your arm status as a bool type variable (False/ True).  Then click on "call" button to send this message. The result should be as follow:
 
-![Screenshot](../img/fig2_rqt_arm.jpg)
+![Screenshot](../img/ch1_rqt_arm.jpg)
 
 ## Arm and Disarm using ROS commands lines
 

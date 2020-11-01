@@ -1,4 +1,4 @@
-# How to Get/ Set parameters of Ardupilot-SITL Rover in MAVROS 
+# How to Get/Set parameters of Ardupilot-SITL Rover
 
 *Author:* Masoud Iranmehr
 

@@ -160,7 +160,7 @@ bottom of ~/.bashrc file to automatically run this command while opening a new s
 Then in rqt window shown, you have to select from "Plugins" > "Topics" > "Topic Monitor" to stat topic monitoring. This 
 will show you the bottom figure:
 
-![Screenshot](img/fig1_ros_topic_monitoring.jpg)
+![Screenshot](img/ch1_ros_topic_monitoring.jpg)
 
 You can tick any of the topic shown and monitor its contents. But in my own experience, I think that it's better to use commands in terminal or write them down in your scripts (bash, C++, python and ...)
  
