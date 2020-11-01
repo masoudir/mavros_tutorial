@@ -19,7 +19,7 @@ MAVROS (MAV-link protocol for Robotic Operating System).
 ## Install some requirements
 Just follow this command:
 
-* `sudo apt-get install python3-dev python3-pip python3-rospkg` - Installs python3 and pip3.
+* `sudo apt-get install python-dev python-pip python3-dev python3-pip python3-rospkg` - Installs python3 and pip3.
 
 ## Install Ardupilot-SITL
 reference : [https://ardupilot.org/dev/docs/building-setup-linux.html](https://ardupilot.org/dev/docs/building-setup-linux.html)
@@ -27,7 +27,7 @@ reference : [https://ardupilot.org/dev/docs/building-setup-linux.html](https://a
 ## Install MAVProxy *(Auxiliary)*
 I prefer to use external proxy if I needed for MAVlink protocol. MAVProxy can forward any MAVLink messages from input to other TCP/UDP/Serial ports. It would be helpful if you are using one vehicle for two or more GCS or controller nodes. To install just use this command:
 
-* `pip3 install MAVProxy` - Install MAVProxy
+* `pip install MAVProxy` - Install MAVProxy with pip in python2
 
 ## Install ROS
 ROS is semi-Operating System for robots. ROS is generally available for many programming languages such as C++, Python, 
@@ -105,11 +105,15 @@ For installing MAVROS from binary packages please refer to [https://ardupilot.or
 
 * `cd <Your_Ardupilot_Instalation_Folder>/ardupilot/Tools/autotest/` - Jump to ardupilot folder
 
-* `python3 sim_vehicle.py -v Rover` - Start Rover vehicle
+* `python sim_vehicle.py -v Rover` - Start Rover vehicle 
+
+Becareful to do not use python3 to run or build MAVProxy due to some mismatches found in this package with MAVProxy 
+modules such as "map" and "console".
+
 
 Note that if you want to show other SITL modules such as map or console, you can use these commands:
 
-    python3 sim_vehicle.py -v Rover --map --console
+    python sim_vehicle.py -v Rover --map --console
     
 Or alternatively you can mention them inside SITL terminal:
 
