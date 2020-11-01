@@ -25,6 +25,8 @@ Then if you want to stop vehicle from moving, you need this command:
 
 * `mode HOLD` - Stops the vehicle
 
+Also there are some other modes to make vehicle move such as "RTL", "MANUAL" and etc . Please refer to this 
+[link](https://ardupilot.org/dev/docs/rover-sitlmavproxy-tutorial.html) for further information.
 
 ## Move your vehicle using ROS rqt:
 
