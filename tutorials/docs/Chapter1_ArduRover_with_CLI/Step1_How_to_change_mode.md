@@ -2,7 +2,7 @@
 
 *Author:* Masoud Iranmehr
 
-*Github Page:* [github.com/masoudir/Ardupilot_MAVROS_Examples](https://github.com/masoudir/Ardupilot_MAVROS_Examples)
+*Github Page:* [github.com/masoudir/mavros_tutorial](https://github.com/masoudir/mavros_tutorial)
 
 # Initialize
 
@@ -28,7 +28,7 @@ Also you can view all of available modes for your vehicle via this command:
 
 ## Change vehicle mode using ROS rqt:
 
-At first you need to Add two plugin from rqt:
+At first you need to add two plugin from rqt:
 
     Plugins -> Topics -> Topic Monitor
     Plugins -> Services -> Service Caller

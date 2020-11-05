@@ -2,7 +2,7 @@
 
 *Author:* Masoud Iranmehr
 
-*Github Page:* [github.com/masoudir/Ardupilot_MAVROS_Examples](https://github.com/masoudir/Ardupilot_MAVROS_Examples)
+*Github Page:* [github.com/masoudir/mavros_tutorial](https://github.com/masoudir/mavros_tutorial)
 
 
 

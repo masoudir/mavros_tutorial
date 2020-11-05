@@ -2,7 +2,7 @@
 
 *Author:* Masoud Iranmehr
 
-*Github Page:* [github.com/masoudir/Ardupilot_MAVROS_Examples](https://github.com/masoudir/Ardupilot_MAVROS_Examples)
+*Github Page:* [github.com/masoudir/mavros_tutorial](https://github.com/masoudir/mavros_tutorial)
 
 ## Initialize
 You just need to follow these steps (has been mentioned in [Quick Start](../index.md))
@@ -175,7 +175,7 @@ Finally if we want to both read the Arming status and set Arming value to robot 
         except rospy.ROSInternalException:
             pass
 
-This code will Arm the robot whenever the robot is disarmed. To access to these code directly visit [github.com/masoudir/Ardupilot_MAVROS_Examples](https://github.com/masoudir/Ardupilot_MAVROS_Examples)
+This code will Arm the robot whenever the robot is disarmed. To access to these code directly visit [github.com/masoudir/mavros_tutorial](https://github.com/masoudir/mavros_tutorial)
 
 
 
