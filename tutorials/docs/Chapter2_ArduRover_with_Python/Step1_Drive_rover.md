@@ -4,6 +4,8 @@
 
 *Github Page:* [github.com/masoudir/mavros_tutorial](https://github.com/masoudir/mavros_tutorial)
 
+*Resource Github Page:* [github.com/masoudir/mavros_python_examples](https://github.com/masoudir/mavros_python_examples)
+
 # Initialize
 
 Please follow steps mentioned in this [link](../index.md)
