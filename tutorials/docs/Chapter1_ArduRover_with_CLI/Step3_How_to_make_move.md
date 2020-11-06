@@ -45,4 +45,14 @@ destination.
 
 You need to publish the destination location via this command:
 
-* `rostopic ` - Executes ROS
+* `rostopic pub /mavros/setpoint_raw/global mavros_msgs/GlobalPositionTarget -1 "{'longitude': 14.51218,'latitude': 10.15785}"` - Move Rover to the specified destination
+
+Or if you want to specify only latitude (longitude=0):
+
+* `rostopic pub /mavros/setpoint_raw/global mavros_msgs/GlobalPositionTarget -1 "'longitude': 14.51218"` - Move Rover to the specified destination
+
+It is noted that "-1" determines that this command will be only published once. If you want to publish this message 
+periodically, you have to remove "-1" argument and also you can use the argument of "-r RATE" to specify the publish rate for this message:
+
+* `rostopic pub /mavros/setpoint_raw/global mavros_msgs/GlobalPositionTarget -r 1"{'longitude': 14.51218,'latitude': 10.15785}"` - Move Rover to the specified destination with 1 Hz rate
+
